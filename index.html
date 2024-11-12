@@ -29,37 +29,31 @@
           <li><a href="#skills">Skills</a></li><li>
           <li><a href="#contact">Contact Us</a></li><li>
           </li>
-          
-
-
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">
-            <i class="fa-solid fa-circle-chevron-down"></i></i></i></a></li>
-        </ul>
-        <ul id="dropdown1" class="dropdown-content Blue-text">
-      <li><a href="https://www.instagram.com/artmellopez/" class="blue-text"></i>Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/jan-artmel-lopez-47b190232/" class="blue-text">LinkedIn</a></li>
-      <li><a href="https://github.com/Janartmel" class="blue-text">GitHub</a></li>
-      <li><a href="https://www.facebook.com/janartmellopez/" class="blue-text">Facebook</a></li>
-          <li class="divider"></li>
-        </ul>
-      </div>
-      
+      </div>   
     </div>
-    <ul class="sidenav " id="mobile-demo">
-      <br>
-      <li><a href="#intro" class="orange-text">Introduction</a></li>
-      <li><a href="#edu" class="orange-text">Education</a></li>
-      <li><a href="#skills" class="orange-text">Skills</a></li>
-      <li><a href="#contact" class="orange-text">Contact Us</a></li><li>
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><i class="material-icons left"><i class="fa-solid fa-circle-chevron-down"></i></i></i></a></li>
+    <ul class="sidenav" id="mobile-demo">
+      <li><div class="user-view">
+        <div class="background blue darken-3">
+          
+        </div>
+        
+        <a href="#user"><img class="circle" src="images/prof.jpg"></a>
+        <a href="#name"><span class="white-text name">Jan Artmel Lopez</span></a>
+        <a href="#email"><span class="white-text email">lopez.janartmel.t@gmail.com</span></a>
+      </div></li>
+      <li><a href="#intro">Introduction</a></li>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#skills">Skills</a></li><li>
+          <li><a href="#contact">Contact Us</a></li><li>
+            <li><a class="subheader">Follow me:</a></li>
+            <li><a href="#!" class="social-media"><i class="fa-brands fa-square-instagram  " ></i>Instagram</a></li>
+            <li><a href="#!"class="social-media"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a></li>
+            <li><a href="#!" class="social-media"><i class="fa-brands fa-square-github"class="social-media"></i>GitHub</a></li>
+            <li><a href="#!" class="social-media"><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+          
     </ul>
-    <ul id="dropdown2" class="dropdown-content text-orange">
-      <li><a href="https://www.instagram.com/artmellopez/" class="blue-text">Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/jan-artmel-lopez-47b190232/" class="blue-text">LinkedIn</a></li>
-      <li><a href="https://github.com/Janartmel" class="blue-text">GitHub</a></li>
-      <li><a href="https://www.facebook.com/janartmellopez/" class="blue-text">Facebook</a></li>
-
-      <li class="divider"></li>
+       
+      <div class="divider"></div>
     </ul>
       </nav>
       <div class="divider"></div>
@@ -201,9 +195,6 @@
           </div>
         </div>
 
-      
-    
-      
       <div class="contact-container" id="contact">
      
         <div class="form-container">
@@ -279,9 +270,21 @@
     </div>
 
 
-    <!-- The button to scroll back to top -->
-    <a id="top" href="#"> <i class="fas fa-arrow-up"></i> </a>
-   
+    <!-- Assistive Touch Button -->
+  <div class="assistive-touch" onclick="toggleAssistiveMenu()">
+    <div class="assistive-icon">&#9776;</div> <!-- Three horizontal lines (hamburger icon) -->
+  </div>
+
+  <!-- Assistive Menu (hidden by default) -->
+  <div id="assistiveMenu" class="assistive-menu">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#intro">Introduction</a></li>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#skills">Skills</a></li><li>
+          <li><a href="#contact">Contact Us</a></li><li>
+    </ul>
+  </div>
      
    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -305,5 +308,6 @@
              
 </body>
 <script src="action.js"></script>
+<script src="script.js"></script>
 
 </html>
