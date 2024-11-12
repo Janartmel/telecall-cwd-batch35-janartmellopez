@@ -4,6 +4,7 @@ var links = document.getElementsByClassName("social-media");
 links[0].addEventListener("click", () => { openlink(1) });
 links[1].addEventListener("click", () => { openlink(2) });
 links[2].addEventListener("click", () => { openlink(3) });
+links[3].addEventListener("click", () => { openlink(4) });
 
 
 function openlink(x) {
