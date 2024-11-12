@@ -1,18 +1,7 @@
-let currentIndex = 0;
+function toggleAssistiveMenu() {
+    const menu = document.getElementById('assistiveMenu');
+    // Toggle the display of the assistive menu
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  }
 
-function moveSlide(direction) {
-    const cards = document.querySelectorAll('.card');
-    const totalCards = cards.length;
 
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalCards - 1;
-    } else if (currentIndex >= totalCards) {
-        currentIndex = 0;
-    }
-
-    const slider = document.querySelector('.slider');
-    const cardWidth = cards[0].offsetWidth + 15; // width of each card plus margin
-    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-}
