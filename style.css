@@ -540,8 +540,8 @@ textarea {
     right: 20px;
     width: 60px;
     height: 60px;
-    background-color: orange;
-    color: white;
+   
+    color: #1565c0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -549,10 +549,6 @@ textarea {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-  }
-  
-  .assistive-icon {
-    font-size: 30px;
   }
   
   /* Assistive Menu */
@@ -573,6 +569,13 @@ textarea {
     margin: 0;
     padding: 0;
   }
+.assistive-touch i {
+    font-size: 50px;
+   
+  }
+  .assistive-touch i:hover {
+    color:orange;
+}
   
   .assistive-menu ul li {
     padding: 5px 30px;
