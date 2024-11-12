@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav .brand-logo img{
-	height: 40px;
+	height: 70px;
 	
 }
 
@@ -70,6 +70,7 @@ span{
     transition: background 0.3s ease;
 
 }
+
 
 .detail a:hover{
     background: #1565c0;
@@ -443,7 +444,6 @@ textarea {
 	transition-property: transform;
 }
 
-
 .wrapper .social-media:nth-child(1) .icon {
 	background: radial-gradient(circle at 30% 140%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
@@ -483,6 +483,67 @@ textarea {
 	color:#4267B2;
 }
 
+.assistive-touch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .assistive-icon {
+    font-size: 30px;
+  }
+  
+  /* Assistive Menu */
+  .assistive-menu {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+    z-index: 999;
+  }
+  
+  .assistive-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .assistive-menu ul li {
+    padding: 5px 30px;
+   
+  }
+  
+  .assistive-menu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .assistive-menu ul li a {
+    text-decoration: none;
+    color: #2f2f30;
+    font-size: 16px;
+  }
+  
+.assistive-menu ul li a:hover,
+.assistive-menu ul li a.active {
+    
+    color: orange;
+   
+}
 
 @media screen and (max-width: 500px) {
 	.wrapper .social-media:hover {
