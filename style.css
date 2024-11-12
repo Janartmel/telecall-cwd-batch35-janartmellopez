@@ -14,22 +14,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 150;
 }
 
-#top {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: orange;
-    bottom: 10%;
-    right: 5%;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 25px;
-    border-radius: 50%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-}
 
 nav .brand-logo img{
 	height: 70px;
@@ -483,12 +467,79 @@ textarea {
 	color:#4267B2;
 }
 
+/* sidee */
+
+.wrapper1 {
+	margin: 15px;
+}
+
+.wrapper1 .social-media {
+	display: inline-block;
+	height: 55px;
+	width: 50px;
+	margin: 0 5px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 50p%;
+	cursor: pointer;
+    
+   
+
+}
+
+.wrapper1 .social-media .icon {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	border-radius: 50%;
+    
+}
+
+.wrapper1 .social-media:nth-child(1) .icon {
+	background: radial-gradient(circle at 30% 140%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.wrapper1 .social-media:nth-child(2) .icon {
+	background: #0072b1;
+}
+
+.wrapper1 .social-media:nth-child(3) .icon {
+	background: #171515;
+}
+
+.wrapper1 .social-media:nth-child(4) .icon {
+	background: linear-gradient(to right, rgb(5, 117, 230), rgb(2, 27, 121));
+}
+
+.wrapper1 .social-media span {
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+
+/* Set Color for each text */
+.wrapper1 .social-media:nth-child(1) span {
+	color: #E1306C;
+}
+
+.wrapper1 .social-media:nth-child(2) span {
+	color: #0072b1;
+}
+
+.wrapper1 .social-media:nth-child(3) span {
+	color: #171515;
+}
+.wrapper1 .social-media:nth-child(4) span {
+	color:#4267B2;
+} 
 .assistive-touch {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: orange;
     color: white;
     border-radius: 50%;
@@ -507,10 +558,10 @@ textarea {
   /* Assistive Menu */
   .assistive-menu {
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     right: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(245, 242, 242);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 15px;
     display: none;
@@ -535,7 +586,7 @@ textarea {
   .assistive-menu ul li a {
     text-decoration: none;
     color: #2f2f30;
-    font-size: 16px;
+    font-size:20px;
   }
   
 .assistive-menu ul li a:hover,
